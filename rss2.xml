@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>雾里看花</title>
+    <link>http://www.wuhua9.top/</link>
+    
+    <atom:link href="http://www.wuhua9.top/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>一个人静静坐在电脑面前写代码的感觉，那是什么感觉？那是武林高手闭关修炼的感觉</description>
+    <pubDate>Wed, 20 Jan 2021 12:34:07 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>第一篇正式博客</title>
+      <link>http://www.wuhua9.top/article/8458675d.html</link>
+      <guid>http://www.wuhua9.top/article/8458675d.html</guid>
+      <pubDate>Wed, 20 Jan 2021 12:19:16 GMT</pubDate>
+      
+      <description>&lt;h1 id=&quot;Hello，MyBlog&quot;&gt;&lt;a href=&quot;#Hello，MyBlog&quot; class=&quot;headerlink&quot; title=&quot;Hello，MyBlog&quot;&gt;&lt;/a&gt;Hello，MyBlog&lt;/h1&gt;&lt;p&gt;我的博客于2021年1月11号正式开通，后经过几天不断测试和优化，今天终于上传了我的第一个博客文章。&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="Hello，MyBlog"><a href="#Hello，MyBlog" class="headerlink" title="Hello，MyBlog"></a>Hello，MyBlog</h1><p>我的博客于2021年1月11号正式开通，后经过几天不断测试和优化，今天终于上传了我的第一个博客文章。</p><a id="more"></a><p>以后我也会不定时的在这里上传我的一些搞机日常和学习心得，以及我遇到的一些问题的解决方法，我之后的几篇博客会把我建站的过程详细的记录下来。</p><p>就这样，哈哈，第一次写博客，也不太会写，以后会继续哪里的。</p><p>加油，奥利给！！！</p>]]></content:encoded>
+      
+      
+      <category domain="http://www.wuhua9.top/categories/%E6%97%A5%E5%B8%B8/">日常</category>
+      
+      <category domain="http://www.wuhua9.top/categories/%E6%97%A5%E5%B8%B8/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="http://www.wuhua9.top/categories/%E6%97%A5%E5%B8%B8/%E9%9A%8F%E6%83%B3/">随想</category>
+      
+      <category domain="http://www.wuhua9.top/categories/%E6%97%A5%E8%AE%B0/">日记</category>
+      
+      
+      <category domain="http://www.wuhua9.top/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      <category domain="http://www.wuhua9.top/tags/%E5%8D%9A%E5%AE%A2/">博客</category>
+      
+      
+      <comments>http://www.wuhua9.top/article/8458675d.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>test_my_site</title>
+      <link>http://www.wuhua9.top/article/7525f478.html</link>
+      <guid>http://www.wuhua9.top/article/7525f478.html</guid>
+      <pubDate>Tue, 19 Jan 2021 05:07:04 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;这是一篇测试用的博客&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>这是一篇测试用的博客</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://www.wuhua9.top/article/7525f478.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://www.wuhua9.top/article/4a17b156.html</link>
+      <guid>http://www.wuhua9.top/article/4a17b156.html</guid>
+      <pubDate>Tue, 19 Jan 2021 05:06:07 GMT</pubDate>
+      
+      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p> <a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://www.wuhua9.top/article/4a17b156.html#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
