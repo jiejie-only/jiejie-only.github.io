@@ -22,4 +22,25 @@
     <content><![CDATA[<p>这是一篇测试用的博客</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>第一篇正式博客</title>
+    <url>/article/8458675d.html</url>
+    <content><![CDATA[<h1 id="Hello，MyBlog"><a href="#Hello，MyBlog" class="headerlink" title="Hello，MyBlog"></a>Hello，MyBlog</h1><p>我的博客于2021年1月11号正式开通，后经过几天不断测试和优化，今天终于上传了我的第一个博客文章。</p>
+<a id="more"></a>
+
+<p>以后我也会不定时的在这里上传我的一些搞机日常和学习心得，以及我遇到的一些问题的解决方法，我之后的几篇博客会把我建站的过程详细的记录下来。</p>
+<p>就这样，哈哈，第一次写博客，也不太会写，以后会继续哪里的。</p>
+<p>加油，奥利给！！！</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+        <category>生活</category>
+        <category>随想</category>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
 </search>

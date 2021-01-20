@@ -6,7 +6,7 @@
   <link href="http://www.wuhua9.top/atom.xml" rel="self"/>
   
   <link href="http://www.wuhua9.top/"/>
-  <updated>2021-01-20T10:20:27.103Z</updated>
+  <updated>2021-01-20T12:33:53.483Z</updated>
   <id>http://www.wuhua9.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一篇正式博客</title>
+    <link href="http://www.wuhua9.top/article/8458675d.html"/>
+    <id>http://www.wuhua9.top/article/8458675d.html</id>
+    <published>2021-01-20T12:19:16.000Z</published>
+    <updated>2021-01-20T12:33:53.483Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hello，MyBlog"><a href="#Hello，MyBlog" class="headerlink" title="Hello，MyBlog"></a>Hello，MyBlog</h1><p>我的博客于2021年1月11号正式开通，后经过几天不断测试和优化，今天终于上传了我的第一个博客文章。</p><a id="more"></a><p>以后我也会不定时的在这里上传我的一些搞机日常和学习心得，以及我遇到的一些问题的解决方法，我之后的几篇博客会把我建站的过程详细的记录下来。</p><p>就这样，哈哈，第一次写博客，也不太会写，以后会继续哪里的。</p><p>加油，奥利给！！！</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Hello，MyBlog&quot;&gt;&lt;a href=&quot;#Hello，MyBlog&quot; class=&quot;headerlink&quot; title=&quot;Hello，MyBlog&quot;&gt;&lt;/a&gt;Hello，MyBlog&lt;/h1&gt;&lt;p&gt;我的博客于2021年1月11号正式开通，后经过几天不断测试和优化，今天终于上传了我的第一个博客文章。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日常" scheme="http://www.wuhua9.top/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="生活" scheme="http://www.wuhua9.top/categories/%E6%97%A5%E5%B8%B8/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="随想" scheme="http://www.wuhua9.top/categories/%E6%97%A5%E5%B8%B8/%E9%9A%8F%E6%83%B3/"/>
+    
+    <category term="日记" scheme="http://www.wuhua9.top/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+    <category term="随笔" scheme="http://www.wuhua9.top/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="博客" scheme="http://www.wuhua9.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>test_my_site</title>
