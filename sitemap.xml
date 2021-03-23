@@ -74,20 +74,6 @@
 
   
   <url>
-    <loc>http://www.wuhua9.top/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.wuhua9.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://www.wuhua9.top/tags/web/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
@@ -108,10 +94,38 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>http://www.wuhua9.top/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.wuhua9.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
+    <loc>http://www.wuhua9.top/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.wuhua9.top/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.wuhua9.top/categories/%E7%AC%94%E8%AE%B0/flask-web/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -133,20 +147,6 @@
   
   <url>
     <loc>http://www.wuhua9.top/categories/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.wuhua9.top/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.wuhua9.top/categories/%E7%AC%94%E8%AE%B0/flask-web/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

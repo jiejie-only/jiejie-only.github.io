@@ -1,97 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Flask Web开发（二）</title>
-      <link href="article/1572f6b0.html"/>
-      <url>article/1572f6b0.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Flask Web开发（一）</title>
-      <link href="article/25641a68.html"/>
-      <url>article/25641a68.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="安装和设置Flask框架"><a href="#安装和设置Flask框架" class="headerlink" title="安装和设置Flask框架"></a>安装和设置Flask框架</h1><p><img src="https://i.loli.net/2021/03/23/MUV8gBiFhDG5xPO.jpg" alt="giFnui8"></p><a id="more"></a><h3 id="安装需要：一台安装了Python的计算机"><a href="#安装需要：一台安装了Python的计算机" class="headerlink" title="安装需要：一台安装了Python的计算机"></a>安装需要：一台安装了Python的计算机</h3><h3 id="推荐使用软件：pycharm"><a href="#推荐使用软件：pycharm" class="headerlink" title="推荐使用软件：pycharm"></a>推荐使用软件：pycharm</h3><h2 id="一-Pycharm安装与配置"><a href="#一-Pycharm安装与配置" class="headerlink" title="一   Pycharm安装与配置"></a>一   Pycharm安装与配置</h2><h3 id="1-下载与安装Pycharm"><a href="#1-下载与安装Pycharm" class="headerlink" title="1   下载与安装Pycharm"></a>1   下载与安装Pycharm</h3><p>​    下载地址：http：//jetbrains.com/pycharm/download</p><h3 id="2-配置"><a href="#2-配置" class="headerlink" title="2   配置"></a>2   配置</h3><h4 id="（1）安装Flask包"><a href="#（1）安装Flask包" class="headerlink" title="（1）安装Flask包"></a>（1）安装Flask包</h4><p><img src="https://i.loli.net/2021/03/23/STKMNmjXvPtHbui.png"></p><h4 id="（2）自动添加代码"><a href="#（2）自动添加代码" class="headerlink" title="（2）自动添加代码"></a>（2）自动添加代码</h4><p><img src="https://i.loli.net/2021/03/23/AQs5BuCU8agLDdG.png"></p><h4 id="（3）启动flask服务器"><a href="#（3）启动flask服务器" class="headerlink" title="（3）启动flask服务器"></a>（3）启动flask服务器</h4><p><img src="https://i.loli.net/2021/03/23/kmrDulKjGYgFMcx.png" alt="image-20210323205242137"></p><h2 id="二-运行Hello-world"><a href="#二-运行Hello-world" class="headerlink" title="二   运行Hello world"></a>二   运行Hello world</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">from flask import Flask</span><br><span class="line">app &#x3D; Flask(__name__)</span><br><span class="line"></span><br><span class="line">@app.route(&#39;&#x2F;&#39;)</span><br><span class="line">def hello_world():</span><br><span class="line">return &#39;Hello World!&#39;</span><br><span class="line"></span><br><span class="line">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span><br><span class="line">app.run()</span><br></pre></td></tr></table></figure><h2 id="三-注册路由"><a href="#三-注册路由" class="headerlink" title="三   注册路由"></a>三   注册路由</h2><h5 id="1-方式一："><a href="#1-方式一：" class="headerlink" title="1 方式一："></a>1 方式一：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;index.html&#39;,methods&#x3D;[&#39;GET&#39;,&#39;POST&#39;],endpoint&#x3D;&#39;index&#39;)</span><br><span class="line">def index():</span><br><span class="line">return &#39;Index&#39;</span><br><span class="line"></span><br><span class="line">参数1 ：URL地址         &#39;&#x2F;index.html&#39;</span><br><span class="line">参数2 ：允许的方法     methods&#x3D;[&#39;GET&#39;,&#39;POST&#39;]</span><br><span class="line">参数3 ： 指定别名：             endpoint&#x3D;&#39;index&#39;</span><br><span class="line">视图函数：index()  </span><br><span class="line"></span><br></pre></td></tr></table></figure><h5 id="2-方式二："><a href="#2-方式二：" class="headerlink" title="2 方式二："></a>2 方式二：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def index(): </span><br><span class="line">return &quot;Index&quot;</span><br><span class="line">self.add_url_rule(rule&#x3D;&#39;&#x2F;index.html&#39;, endpoint&#x3D;&quot;index&quot;, view_func&#x3D;index, methods&#x3D;[&quot;GET&quot;,&quot;POST&quot;]) #endpoint是别名 </span><br><span class="line"></span><br><span class="line">rule ：URL地址         &#39;&#x2F;index.html&#39;</span><br><span class="line">methods ：允许的方法     methods&#x3D;[&#39;GET&#39;,&#39;POST&#39;]</span><br><span class="line">endpoint ： 指定别名：             endpoint&#x3D;&#39;index&#39;</span><br><span class="line">视图函数：index()  </span><br><span class="line"></span><br></pre></td></tr></table></figure><h5 id="3-方式三："><a href="#3-方式三：" class="headerlink" title="3 方式三："></a>3 方式三：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">app.add_url_rule(rule&#x3D;&#39;&#x2F;index.html&#39;, endpoint&#x3D;&quot;index&quot;, view_func&#x3D;index, methods&#x3D;[&quot;GET&quot;,&quot;POST&quot;]) app.view_functions[&#39;index&#39;] &#x3D; index</span><br><span class="line"></span><br><span class="line">rule ：URL地址         &#39;&#x2F;index.html&#39;</span><br><span class="line">methods ：允许的方法     methods&#x3D;[&#39;GET&#39;,&#39;POST&#39;]</span><br><span class="line">endpoint ： 指定别名：             endpoint&#x3D;&#39;index&#39;</span><br><span class="line">default：   defaults&#x3D;&#123;&#39;name&#39;: &#39;Programmer&#39;&#125;  一般用来传递默认参数</span><br><span class="line">视图函数：index()  </span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="四-URL传参"><a href="#四-URL传参" class="headerlink" title="四   URL传参"></a>四   URL传参</h2><h4 id="1-常用参数类型及用法"><a href="#1-常用参数类型及用法" class="headerlink" title="1 常用参数类型及用法"></a>1 常用参数类型及用法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;user&#x2F;&lt;username&gt;&#39;)  </span><br><span class="line"> #常用的   不加参数的时候默认是字符串形式的</span><br><span class="line">@app.route(&#39;&#x2F;post&#x2F;&lt;int:post_id&gt;&#39;) </span><br><span class="line"> #常用的   #指定int，说明是整型的</span><br><span class="line">@app.route(&#39;&#x2F;post&#x2F;&lt;float:post_id&gt;&#39;)</span><br><span class="line">@app.route(&#39;&#x2F;post&#x2F;&lt;path:path&gt;&#39;)</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="例："><a href="#例：" class="headerlink" title="例："></a>例：</h4><p>​        url地址栏输入‘127.0.0.1/greet/wulikanhua ’</p><pre><code>   显示页面内容： welcome to pycharm ,wulikanhua</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;greet&#39;, defaults&#x3D;&#123;&#39;name&#39;: &#39;Programmer&#39;&#125;)</span><br><span class="line">@app.route(&#39;&#x2F;greet&#x2F;&lt;name&gt;&#39;)</span><br><span class="line">def greet(name):</span><br><span class="line">    return &#39;&lt;h1&gt;welcome to pycharm! %s!&lt;&#x2F;h1&gt;&#39; % name</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="2-常用配置"><a href="#2-常用配置" class="headerlink" title="2 常用配置"></a>2 常用配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">ENV: production</span><br><span class="line">DEBUG: False</span><br><span class="line">TESTING: False</span><br><span class="line">PROPAGATE_EXCEPTIONS: None</span><br><span class="line">PRESERVE_CONTEXT_ON_EXCEPTION: None</span><br><span class="line">SECRET_KEY: None</span><br><span class="line">PERMANENT_SESSION_LIFETIME: 31 days, 0:00:00</span><br><span class="line">USE_X_SENDFILE: False</span><br><span class="line">SERVER_NAME: None</span><br><span class="line">APPLICATION_ROOT: &#x2F;</span><br><span class="line">SESSION_COOKIE_NAME: session</span><br><span class="line">SESSION_COOKIE_DOMAIN: None</span><br><span class="line">SESSION_COOKIE_PATH: None</span><br><span class="line">SESSION_COOKIE_HTTPONLY: True</span><br><span class="line">SESSION_COOKIE_SECURE: False</span><br><span class="line">SESSION_COOKIE_SAMESITE: None</span><br><span class="line">SESSION_REFRESH_EACH_REQUEST: True</span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="3-修改配置"><a href="#3-修改配置" class="headerlink" title="3 修改配置"></a>3 修改配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print (app.config)</span><br></pre></td></tr></table></figure><p>​    （1） app.config是flask.config.Config类的实例</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.config[&#39;DEBUG&#39;] &#x3D; True </span><br></pre></td></tr></table></figure><p>​    （2）app.config继承自Python内置数据结构dict,所以可以使用update方法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">app.config.update(</span><br><span class="line">    DEBUG &#x3D; True,    ...</span><br><span class="line">）</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2021/03/23/rKFLmJj2oedC1V8.png" alt="image-20210323212443963"></p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>第一篇正式博客</title>
+    <url>/article/8458675d.html</url>
+    <content><![CDATA[<h1 id="Hello，MyBlog"><a href="#Hello，MyBlog" class="headerlink" title="Hello，MyBlog"></a>Hello，MyBlog</h1><p>我的博客于2021年1月11号正式开通，后经过几天不断测试和优化，今天终于上传了我的第一个博客文章。</p>
+<a id="more"></a>
+
+<p>以后我也会不定时的在这里上传我的一些搞机日常和学习心得，以及我遇到的一些问题的解决方法，我之后的几篇博客会把我建站的过程详细的记录下来。</p>
+<p>就这样，哈哈，第一次写博客，也不太会写，以后会继续努力的。</p>
+<p>加油，奥利给！！！</p>
+]]></content>
       <categories>
-          
-          <category> 笔记 </category>
-          
-          <category> flask web </category>
-          
+        <category>日常</category>
+        <category>生活</category>
+        <category>随想</category>
+        <category>日记</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> web </tag>
-            
-            <tag> Flask </tag>
-            
-            <tag> Python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇正式博客</title>
-      <link href="article/8458675d.html"/>
-      <url>article/8458675d.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="Hello，MyBlog"><a href="#Hello，MyBlog" class="headerlink" title="Hello，MyBlog"></a>Hello，MyBlog</h1><p>我的博客于2021年1月11号正式开通，后经过几天不断测试和优化，今天终于上传了我的第一个博客文章。</p><a id="more"></a><p>以后我也会不定时的在这里上传我的一些搞机日常和学习心得，以及我遇到的一些问题的解决方法，我之后的几篇博客会把我建站的过程详细的记录下来。</p><p>就这样，哈哈，第一次写博客，也不太会写，以后会继续努力的。</p><p>加油，奥利给！！！</p>]]></content>
-      
-      
+      <tags>
+        <tag>随笔</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Flask Web开发（二）</title>
+    <url>/article/1572f6b0.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Flask Web开发（一）</title>
+    <url>/article/25641a68.html</url>
+    <content><![CDATA[<h1 id="安装和设置Flask框架"><a href="#安装和设置Flask框架" class="headerlink" title="安装和设置Flask框架"></a>安装和设置Flask框架</h1><p><img src="https://i.loli.net/2021/03/23/MUV8gBiFhDG5xPO.jpg" alt="giFnui8"></p>
+<a id="more"></a>
+
+<h3 id="安装需要：一台安装了Python的计算机"><a href="#安装需要：一台安装了Python的计算机" class="headerlink" title="安装需要：一台安装了Python的计算机"></a>安装需要：一台安装了Python的计算机</h3><h3 id="推荐使用软件：pycharm"><a href="#推荐使用软件：pycharm" class="headerlink" title="推荐使用软件：pycharm"></a>推荐使用软件：pycharm</h3><h2 id="一-Pycharm安装与配置"><a href="#一-Pycharm安装与配置" class="headerlink" title="一   Pycharm安装与配置"></a>一   Pycharm安装与配置</h2><h3 id="1-下载与安装Pycharm"><a href="#1-下载与安装Pycharm" class="headerlink" title="1   下载与安装Pycharm"></a>1   下载与安装Pycharm</h3><p>​    下载地址：http：//jetbrains.com/pycharm/download</p>
+<h3 id="2-配置"><a href="#2-配置" class="headerlink" title="2   配置"></a>2   配置</h3><h4 id="（1）安装Flask包"><a href="#（1）安装Flask包" class="headerlink" title="（1）安装Flask包"></a>（1）安装Flask包</h4><p><img src="https://i.loli.net/2021/03/23/STKMNmjXvPtHbui.png"></p>
+<h4 id="（2）自动添加代码"><a href="#（2）自动添加代码" class="headerlink" title="（2）自动添加代码"></a>（2）自动添加代码</h4><p><img src="https://i.loli.net/2021/03/23/AQs5BuCU8agLDdG.png"></p>
+<h4 id="（3）启动flask服务器"><a href="#（3）启动flask服务器" class="headerlink" title="（3）启动flask服务器"></a>（3）启动flask服务器</h4><p><img src="https://i.loli.net/2021/03/23/kmrDulKjGYgFMcx.png" alt="image-20210323205242137"></p>
+<h2 id="二-运行Hello-world"><a href="#二-运行Hello-world" class="headerlink" title="二   运行Hello world"></a>二   运行Hello world</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from flask import Flask</span><br><span class="line">app &#x3D; Flask(__name__)</span><br><span class="line"></span><br><span class="line">@app.route(&#39;&#x2F;&#39;)</span><br><span class="line">def hello_world():</span><br><span class="line">	return &#39;Hello World!&#39;</span><br><span class="line"></span><br><span class="line">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span><br><span class="line">	app.run()</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="三-注册路由"><a href="#三-注册路由" class="headerlink" title="三   注册路由"></a>三   注册路由</h2><h5 id="1-方式一："><a href="#1-方式一：" class="headerlink" title="1 方式一："></a>1 方式一：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;index.html&#39;,methods&#x3D;[&#39;GET&#39;,&#39;POST&#39;],endpoint&#x3D;&#39;index&#39;)</span><br><span class="line">def index():</span><br><span class="line">return &#39;Index&#39;</span><br><span class="line"></span><br><span class="line">参数1 ：URL地址         &#39;&#x2F;index.html&#39;</span><br><span class="line">参数2 ：允许的方法     methods&#x3D;[&#39;GET&#39;,&#39;POST&#39;]</span><br><span class="line">参数3 ： 指定别名：             endpoint&#x3D;&#39;index&#39;</span><br><span class="line">视图函数：index()  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="2-方式二："><a href="#2-方式二：" class="headerlink" title="2 方式二："></a>2 方式二：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def index(): </span><br><span class="line">return &quot;Index&quot;</span><br><span class="line">self.add_url_rule(rule&#x3D;&#39;&#x2F;index.html&#39;, endpoint&#x3D;&quot;index&quot;, view_func&#x3D;index, methods&#x3D;[&quot;GET&quot;,&quot;POST&quot;]) #endpoint是别名 </span><br><span class="line"></span><br><span class="line">rule ：URL地址         &#39;&#x2F;index.html&#39;</span><br><span class="line">methods ：允许的方法     methods&#x3D;[&#39;GET&#39;,&#39;POST&#39;]</span><br><span class="line">endpoint ： 指定别名：             endpoint&#x3D;&#39;index&#39;</span><br><span class="line">视图函数：index()  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="3-方式三："><a href="#3-方式三：" class="headerlink" title="3 方式三："></a>3 方式三：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">app.add_url_rule(rule&#x3D;&#39;&#x2F;index.html&#39;, endpoint&#x3D;&quot;index&quot;, view_func&#x3D;index, methods&#x3D;[&quot;GET&quot;,&quot;POST&quot;]) app.view_functions[&#39;index&#39;] &#x3D; index</span><br><span class="line"></span><br><span class="line">rule ：URL地址         &#39;&#x2F;index.html&#39;</span><br><span class="line">methods ：允许的方法     methods&#x3D;[&#39;GET&#39;,&#39;POST&#39;]</span><br><span class="line">endpoint ： 指定别名：             endpoint&#x3D;&#39;index&#39;</span><br><span class="line">default：   defaults&#x3D;&#123;&#39;name&#39;: &#39;Programmer&#39;&#125;  一般用来传递默认参数</span><br><span class="line">视图函数：index()  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="四-URL传参"><a href="#四-URL传参" class="headerlink" title="四   URL传参"></a>四   URL传参</h2><h4 id="1-常用参数类型及用法"><a href="#1-常用参数类型及用法" class="headerlink" title="1 常用参数类型及用法"></a>1 常用参数类型及用法</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;user&#x2F;&lt;username&gt;&#39;)  </span><br><span class="line"> #常用的   不加参数的时候默认是字符串形式的</span><br><span class="line">@app.route(&#39;&#x2F;post&#x2F;&lt;int:post_id&gt;&#39;) </span><br><span class="line"> #常用的   #指定int，说明是整型的</span><br><span class="line">@app.route(&#39;&#x2F;post&#x2F;&lt;float:post_id&gt;&#39;)</span><br><span class="line">@app.route(&#39;&#x2F;post&#x2F;&lt;path:path&gt;&#39;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="例："><a href="#例：" class="headerlink" title="例："></a>例：</h4><p>​        url地址栏输入‘127.0.0.1/greet/wulikanhua ’</p>
+<pre><code>   显示页面内容： welcome to pycharm ,wulikanhua</code></pre>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">@app.route(&#39;&#x2F;greet&#39;, defaults&#x3D;&#123;&#39;name&#39;: &#39;Programmer&#39;&#125;)</span><br><span class="line">@app.route(&#39;&#x2F;greet&#x2F;&lt;name&gt;&#39;)</span><br><span class="line">def greet(name):</span><br><span class="line">    return &#39;&lt;h1&gt;welcome to pycharm! %s!&lt;&#x2F;h1&gt;&#39; % name</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="2-常用配置"><a href="#2-常用配置" class="headerlink" title="2 常用配置"></a>2 常用配置</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ENV: production</span><br><span class="line">DEBUG: False</span><br><span class="line">TESTING: False</span><br><span class="line">PROPAGATE_EXCEPTIONS: None</span><br><span class="line">PRESERVE_CONTEXT_ON_EXCEPTION: None</span><br><span class="line">SECRET_KEY: None</span><br><span class="line">PERMANENT_SESSION_LIFETIME: 31 days, 0:00:00</span><br><span class="line">USE_X_SENDFILE: False</span><br><span class="line">SERVER_NAME: None</span><br><span class="line">APPLICATION_ROOT: &#x2F;</span><br><span class="line">SESSION_COOKIE_NAME: session</span><br><span class="line">SESSION_COOKIE_DOMAIN: None</span><br><span class="line">SESSION_COOKIE_PATH: None</span><br><span class="line">SESSION_COOKIE_HTTPONLY: True</span><br><span class="line">SESSION_COOKIE_SECURE: False</span><br><span class="line">SESSION_COOKIE_SAMESITE: None</span><br><span class="line">SESSION_REFRESH_EACH_REQUEST: True</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="3-修改配置"><a href="#3-修改配置" class="headerlink" title="3 修改配置"></a>3 修改配置</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print (app.config)</span><br></pre></td></tr></table></figure>
+<p>​    （1） app.config是flask.config.Config类的实例</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">app.config[&#39;DEBUG&#39;] &#x3D; True </span><br></pre></td></tr></table></figure>
+<p>​    （2）app.config继承自Python内置数据结构dict,所以可以使用update方法：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">app.config.update(</span><br><span class="line">    DEBUG &#x3D; True,    ...</span><br><span class="line">）</span><br></pre></td></tr></table></figure>
+
+
+<p><img src="https://i.loli.net/2021/03/23/rKFLmJj2oedC1V8.png" alt="image-20210323212443963"></p>
+]]></content>
       <categories>
-          
-          <category> 日常 </category>
-          
-          <category> 生活 </category>
-          
-          <category> 随想 </category>
-          
-          <category> 日记 </category>
-          
+        <category>笔记</category>
+        <category>flask web</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 随笔 </tag>
-            
-            <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="article/4a17b156.html"/>
-      <url>article/4a17b156.html</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p> <a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>web</tag>
+        <tag>Flask</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/article/4a17b156.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+ <a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
 </search>
